@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!-- saved from url=(0047)file:///C:/Users/Ritesh/Downloads/Document.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    li{
+      list-style-type: none;
+    }
+    a{
+      text-decoration: none;
+      padding: 10px 10px;
+    }
+  </style>
+</head>
+<body>
+  <center>
+    <div class="links">
+      <p>Made By Ritesh Kandel.</p>
+      <p>Press the cross button to play the stream. If You have any problem in the player play below ones.</p>
+       <li><a href="starsports.html">StarSports</a>
+       <a href="starsportshindi.html">StarSports Hindi</a>
+       <a href="willow.html">Willow</a>
+       <a href="skysports.html">SkySports</a>
+       <a href="supersports.html">SuperSports</a>
+       <a href="fox.html">Fox Sports</a>
+        <a href="index.html">Belin Sports</a></li>
+       
+      
+     </div>
+    
+  
+  <div class="video_player"><iframe id="player_frame" name="iframe" width="90%" height="510px" frameborder="0" allowfullscreen="true" scrolling="no" marginheight="0" marginwidth="0" webkitallowfullscreen="" mozallowfullscreen="" src="https://cdn2.crichd.pro/embed2.php?id=spch163&q=Channel 163"></iframe></div>
+
+</center>
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body></html>
